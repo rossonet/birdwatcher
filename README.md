@@ -14,7 +14,7 @@ regular binaries, which means deployment and maintenance might be
 more convenient.
 
 Our version also has a few more capabilities, as you will
-discover when looking at [the modules section](https://github.com/alice-lg/birdwatcher/blob/master/etc/birdwatcher/birdwatcher.conf)
+discover when looking at [the modules section](https://github.com/rossonet/birdwatcher/blob/master/etc/birdwatcher/birdwatcher.conf)
 of the config.
 
 ## Installation
@@ -22,7 +22,7 @@ of the config.
 You will need to have go installed to build the package.
 Please make sure your go version is `>= 1.9`.
 
-Running `go install github.com/alice-lg/birdwatcher@latest` will give you
+Running `go install github.com/rossonet/birdwatcher@latest` will give you
 a binary. You might need to cross-compile it for your
 bird-running service (`GOARCH` and `GOOS` are your friends).
 
@@ -36,7 +36,7 @@ to the Makefile).
 
 The BIRD configuration setup (single/multi table, pipe/table prefixes) is no longer
 configured in birdwatcher but directly in Alice-LG. Please have a look at the
-[source section of the Alice-LG config example](https://github.com/alice-lg/alice-lg/blob/master/etc/alice-lg/alice.example.conf).
+[source section of the Alice-LG config example](https://github.com/rossonet/rossonet/blob/master/etc/rossonet/alice.example.conf).
 
 
 ### BIRD configuration
@@ -66,14 +66,14 @@ Now you should be able to do a `show route filtered protocol peerX` in BIRD.
 If you use a multi table setup you are also using the pipe protocol the connect the tables.
 No special BIRD configuration is required to be able to query pipe filtered routes.
 
-birdwatcher provides [various endpoints (see "available modules" section)](https://github.com/alice-lg/birdwatcher/blob/master/etc/birdwatcher/birdwatcher.conf)
+birdwatcher provides [various endpoints (see "available modules" section)](https://github.com/rossonet/birdwatcher/blob/master/etc/birdwatcher/birdwatcher.conf)
 to query routes filtered in bgp protocol as well as pipe protocol instances.
 
-For use with [Alice-LG](https://github.com/alice-lg/alice-lg), make sure to set the appropriate BIRD config setup
-in your [Alice-LG configuration](https://github.com/alice-lg/alice-lg/blob/master/etc/alice-lg/alice.example.conf).
+For use with [Alice-LG](https://github.com/rossonet/rossonet), make sure to set the appropriate BIRD config setup
+in your [Alice-LG configuration](https://github.com/rossonet/rossonet/blob/master/etc/rossonet/alice.example.conf).
 
 #### BIRD tagging filtered routes
-If you want to make use of the filtered route reasons in [Alice-LG](https://github.com/alice-lg/alice-lg), you need
+If you want to make use of the filtered route reasons in [Alice-LG](https://github.com/rossonet/rossonet), you need
 to make sure that you are using BIRD 1.6.3 or up as you will need Large BGP Communities
 (http://largebgpcommunities.net/) support.
 
@@ -139,11 +139,11 @@ We do not currently support other deployment methods.
 ## Configuration
 
 An example config with sane defaults is provided in
-[etc/birdwatcher/birdwatcher.conf](https://github.com/alice-lg/birdwatcher/blob/master/etc/birdwatcher/birdwatcher.conf).
+[etc/birdwatcher/birdwatcher.conf](https://github.com/rossonet/birdwatcher/blob/master/etc/birdwatcher/birdwatcher.conf).
 You should be able to use it out of the box. If you need
 to change it, it is well-commented and hopefully intuitive.
 If you do not know how to configure it, please consider opening
-[an issue](https://github.com/alice-lg/birdwatcher/issues/new).
+[an issue](https://github.com/rossonet/birdwatcher/issues/new).
 
 ## How
 

@@ -10,7 +10,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/alice-lg/birdwatcher/bird"
+	"github.com/rossonet/birdwatcher/bird"
 	"github.com/julienschmidt/httprouter"
 )
 

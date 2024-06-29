@@ -3,7 +3,7 @@ package endpoints
 import (
 	"time"
 
-	"github.com/alice-lg/birdwatcher/bird"
+	"github.com/rossonet/birdwatcher/bird"
 )
 
 type TimeInfo struct {

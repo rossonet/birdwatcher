@@ -8,10 +8,10 @@ import (
 	"strings"
 
 	"github.com/BurntSushi/toml"
-	"github.com/imdario/mergo"
+	"dario.cat/mergo"
 
-	"github.com/alice-lg/birdwatcher/bird"
-	"github.com/alice-lg/birdwatcher/endpoints"
+	"github.com/rossonet/birdwatcher/bird"
+	"github.com/rossonet/birdwatcher/endpoints"
 )
 
 type Config struct {

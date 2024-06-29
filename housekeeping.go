@@ -5,7 +5,7 @@ import (
 	"runtime/debug"
 	"time"
 
-	"github.com/alice-lg/birdwatcher/bird"
+	"github.com/rossonet/birdwatcher/bird"
 )
 
 type HousekeepingConfig struct {
